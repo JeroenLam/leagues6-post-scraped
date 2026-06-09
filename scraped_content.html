@@ -12,7 +12,7 @@
     <link rel='dns-prefetch' href='//www.google-analytics.com' />
     <link rel='dns-prefetch' href='//ajax.googleapis.com' />
     <link rel='dns-prefetch' href='//connect.facebook.net' />
-    <link href='https://www.runescape.com/css/c/oldschool-127.css' rel='stylesheet' />
+    <link href='https://www.runescape.com/css/c/oldschool-128.css' rel='stylesheet' />
 	<link rel='icon' href='https://www.runescape.com/img/rsp777/os-favicon-16x16.png?1' sizes='16x16' type='image/png'>
 	<link rel='icon' href='https://www.runescape.com/img/rsp777/os-favicon-32x32.png?1' sizes='32x32' type='image/png'>
 	<link rel='icon' href='https://www.runescape.com/img/rsp777/os-favicon-96x96.png?1' sizes='96x96' type='image/png'>
@@ -91,7 +91,7 @@
         })();
     </script>
     <script src='https://cdn-ukwest.onetrust.com/consent/019b25be-0577-738e-8af0-4b232af181c1/OtAutoBlock.js'></script>
-    <script>
+    <script data-ot-ignore>
         !(function (w, d, s, u) {
             w._athena = w._athena || {};
             w._athena.queue = w._athena.queue || [];
@@ -117,6 +117,7 @@
             js.setAttribute("data-environment", "production");
             js.setAttribute("data-acquisition-product-id", "com.runescape.oldschool");
             js.setAttribute("data-acquisition-domain", "runescape.com");
+            js.setAttribute("data-ot-ignore", "true");
             
             f.parentNode.insertBefore(js, f);
         })(window, document, "script", 'https://athena.runescape.com/athena.0.latest.js');
